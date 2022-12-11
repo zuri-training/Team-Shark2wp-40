@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1> Guardian registration form</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{register.as_p}}
+    {{gaurdianForm.as_p}}
+    <input type="submit" value="Create Account">
+</form>
+
+{% endblock %}
