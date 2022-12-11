@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% csrf_token %}
+
+  
+  <p> {{form.username.label}} {{form.username}}  </p>
+  <p> {{form.full_name.label}} {{form.full_name}}  </p>
+  <p> {{form.email.label}} {{form.email}}  </p>
+  <p> {{school.school_name.label}} {{school.school_name}}  </p>
+  <p> {{school.cac.label}} {{school.cac}}  </p>
+  <p> {{school.date_of_establishment.label}} {{school.date_of_establishment}}  </p>
+  <p>{{form.password1.label}} {{form.password1}}</p>
+  <p>{{form.password2.label}} {{form.password2}}</p>
+        
+    
+    
+    <input type="submit" value="Create Account">
+</form>
+
+
+{% endblock content %}
