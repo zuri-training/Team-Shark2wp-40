@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
     <link rel="stylesheet" href="CSS/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +22,7 @@
     />
   </head>
   <body>
+    <!--Navbar section-->
     <header>
       <div class="logo">
         <img
@@ -30,12 +39,10 @@
           <li class="nav__item"><a href="Frontend/about.html" class="nav_link">About Us</a></li>
           <li class="nav__item"><a href="Frontend/FAQs.html" class="nav_link">FAQs</a></li>
           <li class="nav__item"><a href="Frontend/contact.html" class="nav_link">Contact Us</a></li>
+          <a class="btns" href="login.html">Log in</a>
+          <a class="btns" href="signup.html">Sign up</a>
         </ul>
       </nav>
-      <div class="nav__btn">
-        <a href="login.html">Log in</a>
-        <a href="signup.html">Sign up</a>
-      </div>
       <i class="bx bx-menu" id="header__toggle"></i>
       </div>
     </header>
@@ -43,26 +50,84 @@
     <div class="login">
       <div class="login-con">
         <div class="login-intro">
-        <h1>Welcome Back!</h1>
-        <p>Enter your details below to get started</p>
+          <h1>Welcome Back!</h1>
+          <p>Enter your details below to get started</p>
         </div>
         <div class="login-details">
-          <label for="emailPhone">Email/Phone number <input type="text" placeholder="Enter Email / Phone number" name="emailPhone" required></label>
-          <label for="psw">Password <input type="password" placeholder="Enter Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required></label>
+          <label for="emailPhone"
+            >Email/Phone number
+            <input
+              type="text"
+              placeholder="Enter Email / Phone number"
+              name="emailPhone"
+              required
+          /></label>
+          <label for="psw"
+            >Password
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              required
+          /></label>
           <div class="re-for">
-          <input type="checkbox" /> Remember Me
-          <span class="forgot"><a href="#">Forgot Password</a></span>
+            <input type="checkbox" /> Remember Me
+            <span class="forgot"><a href="#">Forgot Password?</a></span>
           </div>
           <button>Sign Up</button>
           <div class="para">
-          <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-        </div>
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+          </div>
         </div>
       </div>
       <div class="login-img">
         <img src="IMG/Quote.png" alt="Laptop with a hand typing" />
       </div>
     </div>
+
+    <footer>
+      <div class="foot">
+        <div class="foot-logo">
+          <img src="IMG/Vector1.png" alt="Two hands holding money" />
+          <h2>MyDebtor</h2>
+        </div>
+        <div class="foot-link">
+          <nav class="foot-nav">
+            <ul>
+              <li class="foot__item foot1"><a href="/" class="foot_link">Home</a></li>
+              <li class="foot__item foot2">
+                <a href="about.html" class="foot_link">About Us</a>
+              </li>
+              <li class="foot__item foot3"><a href="/" class="foot_link">Features</a></li>
+              <li class="foot__item foot4"><a href="/" class="foot_link">Our Clients</a></li>
+              <li class="foot__item foot5"><a href="/" class="foot_link">Testimonies</a></li>
+              <li class="foot__item foot6">
+                <a href="FAQs.html" class="foot_link">FAQs</a>
+              </li>
+              <li class="foot__item foot7">
+                <a href="contact.html" class="foot_link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="foot-socials">
+          <p>Follow us on:</p>
+          <ul>
+            <li>
+              <a href="#" class="social-link"><img src="IMG/Instagram.png" alt="Instagram logo"
+              /></a>
+              <a href="#" class="social-link"><img src="IMG/Facebook.png" alt="Facebook logo" /></a>
+              <a href="#" class="social-link"><img src="IMG/Twitter.png" alt="Twitter logo" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2022 All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="js/app.js"></script>
   </body>
