@@ -4,55 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Dashboard.css">
-    <title>Dashboard</title>
+    <script src='https://fontawesome.com/icons/school?s=thin&f=classic' crossorigin='anonymous'></script><title>Dashboard</title>
+    <link rel="stylesheet" href="CSS/style_dashboard.css">
+    <title> DashBoard</title>
 </head>
 <body>
-    <div class="container">
-        <div class="item Dashboard_sideBar ">
+    <div class="main_container1">
+        <!-- Container for the Dashboard SideBar-->
+   <div class="main_Container">
+    <!-- DashBoard SideBar-->
+    <main class="Dashboard_sidebar">
+        <!-- Container for the Logo-->
+        <div class="logo_">
+            <ul >
+                <li><i><img src="Logo.png" alt="">MyDebtor</i></li>
+                
+                </ul>
+            
+        </div>
+        <!-- Container for Picture and Welcome Back -->
+        <div class="Pic_Wel">
+        <img  src="Pic.png" alt="">
+        <h4>Hi Miss</h4>
+        <h4>Welcome Back</h4>
+        </div>
+        <!-- Container for the Navigation Bar-->
+        <div class="Dash_Nav" >
+            
+            <div class="Dash_Nav1">
             <ul>
-                <li><i><img src="Logo.jpg" alt=""></i></li>
-                <li><img src="Pic.jpg" alt=""></li>
-                <li><a href=""><img src="IMG/Dashboard.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Schools.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Debtors.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Posts.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Profile.jpg" alt=""></a></li><br><br><br><br><br><br><br><br><br><br><br><br>
-                <li><a href=""><img src="IMG/Log out.jpg" alt=""></a></li>
+                
+                <li class="Nav_Bar"><a href=""><i><img src="Dashboard.jpg" alt="">DashBoard</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img style="height: 40px;" src="Schools.jpg" alt="">School</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img src="Debtors.jpg" alt="">Debtors</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img src="Posts.jpg" alt="">Posts</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img src="Profile.jpg" alt="">Profile</i></a></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li class="Nav_Bar"><a href=""><i><img src="Log out.jpg" alt="">Log Out</i></a></li>
             </ul>
         </div>
-
-
-        <div class="item search_Bar">
-            
-                <!--<input type="text" id="search" placeholder="Search, debtors, students, School...." name="search" >
-                <img src="pic & Bell.jpg" alt="">-->
-                <img src="IMG/Search.jpg" alt="">
-            
         </div>
+        
+    </main>
+    </div>
 
-
-        <div class="item population_Bar">
+    <div class="SideBar_Container">
+    
+    <!-- Container for the Search Nav Bar-->
+<div class="container3">
+    <!-- Search Icon and Notification-->
+    <div class="Icon_container">
+        <section>
+            <ul >
+                <li><input type="text" id="search" placeholder="Search, debtors, students, School...." name="search" ></li>
+                <li><img src="pic & Bell.jpg" alt=""></li>
+            </ul>
+        </section>
+    </div>
+        </div>
             
-                <a href=""><img src="IMG/Population.jpg" alt=""></a>
-                <a href=""><img src="IMG/Returnees.jpg" alt=""></a>
-                <a href=""><img src="IMG/Rate of Debtors.jpg" alt=""></a>
-                <a href=""><img src="IMG/Total Population.jpg" alt=""></a>
+        <!-- Container for the Population Bar-->
+       
+        <div class="Container_for_Population_Pie_Table">
+    <!-- Population of School & Returnees & Rate of Debtors and Total Population of Students-->
+       <div class="population">
+        <div class="population_Items">
+            <section>
+                <ul>
+                    <li><button class="btn"><a href=""><p>Populations of schools</p> <br> <span>701</span> <br> <p>Details ></p> <br> <span>+10%</span></a></button></li>
+                    <li><button class="btn"><a href=""> <p> Returnees</p> <br> <span>50%</span> <br> <p>Details ></p> <span>+10%</span></a></button></li>
+                    <li><button class="btn"><a href=""><p>Rate of Debtors</p> <br> <span>31.6%</span> <br> <p> Details > </p> <br> <span>+10%</span></a></button></li>
+                    <li><button class="btn"><a href=""> <p>Total Population of students</p> <br> <span>3,000</span> <br> <p>Details ></p> <br> <span>+10%</span></a></button></li>
+                    
+                </ul>
+            </section>
+        </div>
+        
+       </div>
+
+
+
+
+
+
+
+
+       <!-- Highest And Most Wanted Defaulters-->
+    <div class="Highest_MsWanted">
+
+         <!-- Container for the pie Maincontainer-->
+        <div class="pie_mainContainer" >
+            <div class="most_wanted">
+                <div class="img_">
+                    <img src="Pie Chart.jpg" alt="">
+                       
+                </div>
                 
+                                
+        
+
+         <!-- Container for the pie Navigation Bar-->
+        <div class="pie_Nav" >
             
+            <div class="pie_Nav1">
+            <ul>
+                
+                <li class="pie_Bar"><a href=""><i><img src="Rectangle 21.png" alt=""> <span>Migrating Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="Rectangle 22.png" alt=""> <span>Paying Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="Rectangle 23.png" alt=""> <span>Signed out Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="Rectangle 24.png" alt=""> <span>Missing Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="Rectangle 25.png" alt=""> <span>Recovered Debtors</span> </i></a></li>
+            </ul>
         </div>
-
-
-        <div class="mostWanted_Bar">
-            
-                <a href=""><img src="Pie Chart.jpg" alt=""></a>
-                <a href=""><img src="Highest & Most.jpg" alt=""></a>
-            
         </div>
+    </div>
+                <div class="table_mainContainer">
+            <div class="..table_container">
+                
+                <ul><li><a href=""> <table>
+           
 
+                    <tr class="Heading-1">
+                        <th rowspan="2" colspan="8" class="mostT">Highest And Most Wanted Defaulters</th>
+                                        
+                    </tr>
+        
+                    <tr class="sub-heading">
+                        
+                        
+                    </tr>
+                    <tr class="row-1">
+                        <td colspan="8">
+                            <div class="mostWantedd">
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <span>Joy Glory</span><br><p>Migrated from three Different<br> Schools and owes a total of 650$</p>
+                                </div>
+                                <div>
+                                    <h6>Add a comment ></h6>
+                                </div>
+                                
+        
+                            </div>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr Class="row-2">
+                        <td colspan="8"><div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div class="mostWantedd">
+                                <span>Favour James</span><br><p>Migrated from Five Different Schools and owes a total of 800K</p>
+                            </div>
+                            <div>
+                                <h6>Add a comment ></h6>
+                            </div>
+                            
+        
+                        </div></td>
+                        
+                    </tr>
+                    <tr class= "row-3">
+                        <td colspan="8">><div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div class="mostWantedd">
+                                <span>Jane Isaac</span><br><p>Performed Fake Payment Transaction  and owes a total of 750K</p>
+                            </div>
+                            <div>
+                                <h6>Add a comment ></h6>
+                            </div>
+                            
+        
+                        </div></td>
+                        
+                        
+                    </tr>
+                    <tr class="row-4">
+                        <td colspan="8"><button><h6>See More ></h6></button></td>
+                        
+                        
+                    </tr>
+                   
+                    
+                
+                </table> </a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
 
-        <div class="Documentation_Bar">
-            <h2>Documentation </h2>
+        <!-- Documentation-->
+     
+        <div class="Table_" style="overflow-x:auto;">
+            <div id="Score-Info">
+                <h2>Documentation </h2>
+            </div>
+            
             <table>
                 <tr class="Heading-1">
                     <th rowspan="2">S.No</th>
@@ -73,108 +225,114 @@
                 <tr class="row-1">
                     <td>1.0</td>
                     <td>Adekunle</td>
-                    <td class="MTH">Pry 5</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Ade@gmail.com</td>
-                    <td class="CHEM">090987564646</td>
-                    <td class="BIO">$3000</td>
-                    <td class="BIO">23-05-2022</td>
+                    <td class="MTH">72</td>
+                    <td class="ENG">43</td>
+                    <td class="PHY">78</td>
+                    <td class="CHEM">73</td>
+                    <td class="BIO">37</td>
+                    <td class="BIO">61</td>
                     
                 </tr>
                 <tr Class="row-2">
                     <td>2.0</td>
                     <td>John</td>
-                    <td class="MTH">Pry 4</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">John@gmail.com</td>
-                    <td class="CHEM">080999883778</td>
-                    <td class="BIO">$4000</td>
-                    <td class="BIO">12-04-2021</td>
+                    <td class="MTH">42</td>
+                    <td class="ENG">64</td>
+                    <td class="PHY">70</td>
+                    <td class="CHEM">55</td>
+                    <td class="BIO">58</td>
+                    <td class="BIO">61</td>
                    
                 </tr>
                 <tr class= "row-3">
                     <td>3.0</td>
                     <td>Peter</td>
-                    <td class="MTH">Pry 5</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Peter@gmail.com</td>
-                    <td class="CHEM">09065367663</td>
-                    <td class="BIO">$700</td>
-                    <td class="BIO">13-03-2012</td>
+                    <td class="MTH">62</td>
+                    <td class="ENG">40</td>
+                    <td class="PHY">73</td>
+                    <td class="CHEM">75</td>
+                    <td class="BIO">99</td>
+                    <td class="BIO">61</td>
                     
                 </tr>
                 <tr class="row-4">
                     <td>4.0</td>
                     <td>Rukayat</td>
-                    <td class="MTH">Pry 1</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Ruky@gmail.com</td>
-                    <td class="CHM">090654646547</td>
-                    <td class="BIO">$800</td>
-                    <td class="BIO">12-07-2017</td>
+                    <td class="MTH">77</td>
+                    <td class="ENG">75</td>
+                    <td class="PHY">78</td>
+                    <td class="CHM">75</td>
+                    <td class="BIO">82</td>
+                    <td class="BIO">61</td>
                     
                 </tr>
                 <tr class= "row-5">
                     <td>5.0</td>
                     <td>Paul</td>
-                    <td class="MTH">Pry 3</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Paul@gmail.com</td>
-                    <td class="CHEM">07098783776</td>
-                    <td class="BIO">$970</td>
-                    <td class="BIO">11-08-2012</td> 
+                    <td class="MTH">72</td>
+                    <td class="ENG">40</td>
+                    <td class="PHY">72</td>
+                    <td class="CHEM">70</td>
+                    <td class="BIO">97</td>
+                    <td class="BIO">61</td> 
                     
                 </tr>
                 <tr class="row-6">
                     <td>6.0</td>
                     <td>Victor</td>
-                    <td class="MTH">Pry 4</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Victor@gmail.com</td>
-                    <td class="CHEM">090765435646</td>
-                    <td class="BIO">$370</td>
-                    <td class="BIO">01-09-2016</td>
+                    <td class="MTH">76</td>
+                    <td class="ENG">64</td>
+                    <td class="PHY">48</td>
+                    <td class="CHEM">99</td>
+                    <td class="BIO">37</td>
+                    <td class="BIO">61</td>
                     
                 </tr>
                 <tr class="row-7">
                     <td>7.0</td>
                     <td>John</td>
-                    <td class="MTH"> Pry 6</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">John@gmail.com</td>
-                    <td class="CHEM">07067543289</td>
-                    <td class="BIO">$640</td>
-                    <td class="BIO">11-11-2019</td>
+                    <td class="MTH">62</td>
+                    <td class="ENG">54</td>
+                    <td class="PHY">78</td>
+                    <td class="CHEM">75</td>
+                    <td class="BIO">64</td>
+                    <td class="BIO">61</td>
                     
                 </tr>
                 <tr class="row-8">
                     <td>8.0</td>
                     <td>Doe</td>
-                    <td class="MTH">Pry 5</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Doe@gmail.com</td>
-                    <td class="CHEM">08078654321</td>
-                    <td class="BIO">$2700</td>
-                    <td class="BIO">09-07-2011</td>
+                    <td class="MTH">52</td>
+                    <td class="ENG">84</td>
+                    <td class="PHY">48</td>
+                    <td class="CHEM">85</td>
+                    <td class="BIO">27</td>
+                    <td class="BIO">61</td>
                     
                 </tr>
                 <tr class="row-9">
                     <td>9.0</td>
                     <td>Stephen</td>
-                    <td class="MTH">Pry 3</td>
-                    <td class="ENG">Zuri College</td>
-                    <td class="PHY">Steve@gmail.com</td>
-                    <td class="CHEM">07098765325</td>
-                    <td class="BIO">$610</td>
-                    <td class="BIO">01-01-2022</td>
+                    <td class="MTH">92</td>
+                    <td class="ENG">44</td>
+                    <td class="PHY">78</td>
+                    <td class="CHEM">65</td>
+                    <td class="BIO">61</td>
+                    <td class="BIO">61</td>
                     
                     
                 </tr>
                 
             
-            </table>  
-        </div>
+            </table>
+        </div> 
 
-    </div>
+
+
+            </div>
+               
+   
+    
+
 </body>
 </html>
