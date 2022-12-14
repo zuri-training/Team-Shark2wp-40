@@ -4,11 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Debtor</title>
+    <title>Sign Up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="../../../static/CSS/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  {% block content %}
+
   <body>
-     replace me 
+    <!--Navbar section-->
+    <header>
+      <div class="logo">
+        <img
+          src="../../../static/IMG/Vector.png"
+          alt="Two hands holding money"
+        />
+        <h2>MyDebtor</h2>
+      </div>
+      <div class="link">
+      <nav class="nav" id="nav-menu">
+        <i class="bx bx-x" id="header__close"></i>
+        <ul>
+          
+          <li class="nav__item"><a href="/" class="nav_link">Home</a></li>
+          <li class="nav__item"><a href="{% url 'school:aboutpage' %}" class="nav_link">About Us</a></li>
+          <li class="nav__item"><a href="{% url 'school:faqpage' %}" class="nav_link">FAQs</a></li>
+          <li class="nav__item"><a href="{% url 'school:contactpage' %}" class="nav_link">Contact Us</a></li>
+          <a class="btns" href="{% url 'login' %}">Log in</a>
+          <a class="btns" href="{% url 'register' %}">Sign up</a>
+          
+        </ul>
+
+        
+        
+      </nav>
+      <i class="bx bx-menu" id="header__toggle"></i>
+      </div>
+    </header>
+                   {% block content %}
+                         replace me 
+    
+                  {% endblock %}
+    <footer>
+      <div class="foot">
+        <div class="foot-logo">
+          <img src="../../../static/IMG/Vector1.png" alt="Two hands holding money" />
+          <h2>MyDebtor</h2>
+        </div>
+        <div class="foot-link">
+          <nav class="foot-nav">
+            <ul>
+              <li class="foot__item foot1"><a href="/" class="foot_link">Home</a></li>
+              <li class="foot__item foot2">
+                <a href="about.html" class="foot_link">About Us</a>
+              </li>
+              <li class="foot__item foot3"><a href="/" class="foot_link">Features</a></li>
+              <li class="foot__item foot4"><a href="/" class="foot_link">Our Clients</a></li>
+              <li class="foot__item foot5"><a href="/" class="foot_link">Testimonies</a></li>
+              <li class="foot__item foot6">
+                <a href="FAQs.html" class="foot_link">FAQs</a>
+              </li>
+              <li class="foot__item foot7">
+                <a href="contact.html" class="foot_link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="foot-socials">
+          <p>Follow us on:</p>
+          <ul>
+            <li>
+              <a href="#" class="social-link"><img src="../../../static/IMG/Instagram.png" alt="Instagram logo"
+              /></a>
+              <a href="#" class="social-link"><img src="../../../static/IMG/Facebook.png" alt="Facebook logo" /></a>
+              <a href="#" class="social-link"><img src="../../../static/IMG/Twitter.png" alt="Twitter logo" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2022 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../../../static/js/app.js"></script>
   </body>
-  {% endblock %}
 </html>

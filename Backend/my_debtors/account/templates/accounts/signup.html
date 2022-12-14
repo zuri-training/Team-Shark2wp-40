@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <head>
+    <title>Sign Up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="../../../static/CSS/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <div class="sign-up">
+      <div class="signup-con">
+        <div class="signup-intro">
+        <h1>Sign Up</h1>
+        <p>Enter your details below to get started</p>
+        </div>
+        <div class="signup-details">
+          <form action="" method="post">
+            {% csrf_token %}
+              <label for="Firstname" >First name {{form.first_name}}</label>
+              <label for="lastname" >Last name {{form.last_name}}</label>
+              <label for="email">Email {{form.email}}</label>
+              <label for="phone_number">Phone Number {{form.phone_number}}</label>
+              <label for="category">Category
+                <p>School account {{form.is_school}}</p>
+                <p>Guardian account  {{form.is_guardian}}</p>
+              </label>
+              <label for="schoolname">School Name {{form.school_name}}</label>
+              <label for="CAC-No">CAC Number {{form.cac}}</label>
+              <label for="date">Date of Establishment <input type="date" name="date" required></label>
+              <label for="psw">Password {{form.password1}}</label>
+              <label for="psw">Confirm Password {{form.password2}}</label>
+              <p style="color: red;">{{form.errors}}</p>
+              
+             <input class="button" type="submit" value="Sign Up">
+              <div class="para">
+              <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+            </form>
+        </div>
+        </div>
+      </div>
+      <div class="signup-img">
+        <img src="../../../static/IMG/Laptop.png" alt="Laptop with a hand typing" />
+      </div>
+    </div>
+
+   
+
+    <script src="../../../static/js/app.js"></script>
+  </body>
+
+{% endblock content %}

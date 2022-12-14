@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../my_debtors/static/CSS/Dashboard.css">
+    <title>Add Debtor Details</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item Dashboard_sideBar ">
+            <ul>
+                <li><i><img src="../../../static/IMG/Logo.jpg" alt=""></i></li>
+                <li><img src="../../../static/IMG/Pic.jpg" alt=""></li>
+                <!-- <li><a href=""><img src="../../../static/IMG/Dashboard.jpg" alt=""></a></li> -->
+                <!-- <li><a href=""><img src="../../../static/IMG/Schools.jpg" alt=""></a></li> -->
+                <!-- <li><a href=""><img src="../../../static/IMG/Debtors.jpg" alt=""></a></li> -->
+                <!-- <li><a href=""><img src="../../../static/IMG/Posts.jpg" alt=""></a></li> -->
+                <!-- <li><a href=""><img src="../../../static/IMG/Profile.jpg" alt=""></a></li><br><br><br><br><br><br><br><br><br><br><br><br> -->
+                <!-- <li><a href=""><img src="../../../static/IMG/Log out.jpg" alt=""></a></li> -->
+            </ul>
+        </div>
+
+
+        <div class="item search_Bar">
+            
+                <!--<input type="text" id="search" placeholder="Search, debtors, students, School...." name="search" >
+                <img src="pic & Bell.jpg" alt="">-->
+                <!-- <img src="../../../static/IMG/Search.jpg" alt=""> -->
+            
+        </div>
+
+
+        <div class="item population_Bar">
+            
+                <!-- <img src="../../../static/IMG/DebtorPic.jpg" alt=""> -->
+               
+                
+            
+        </div>
+
+
+        <div class="mostWanted_Bar">
+            
+            <form class="DebtorDetails" action="" method="POST">
+            
+                {% csrf_token %}
+               <label for="full_name"> Name of Debtor:</label>
+               <p> {{form.debtor_name.label}} {{form.debtor_name}} </p>
+      
+               <p>  {{form.ward_name.label}} {{form.ward_name}} </p>
+               <p> {{form.email.label}} {{form.email}} </p>
+               <p> {{form.school.label}} {{form.school}} </p>
+              
+               <p>  {{form.debtor_class.label }}  {{form.debtor_class }} </p>
+               <p>  {{form.amount_indebted.label }} {{form.amount_indebted }} </p>
+               <p>  {{form.phone_no.label}} {{form.phone_no}}</p>
+               <p> {{form.debtor_image.label}}  {{form.debtor_image}} </p>
+               
+                    {{form.errors}}
+                <input type="submit" value="Add Deptor">
+
+              
+              
+              
+              
+              
+                   
+               <!-- <br><br>
+
+               <label for="full_name"> Name of ward:</label>
+                   
+              
+               <br><br>
+
+               <label for="School_category"> Name of School:</label>
+
+               <input type="text" id="first_name" placeholder="Longman International School" name="School_category" >
+               <br><br>
+
+               <label for="Class_Debt"> Class:</label>
+               
+               <input type="text" id="Class_Debt" placeholder="Pry 5" name="Class_Debt" >
+               <br><br>
+
+               <label for="Date_"> Date:</label>
+                   
+               <input type="date" id="date_"  name="Date_" >
+                   <br><br>
+
+                <label for="Amount_Indebt"> Amount Indebted:</label>
+               
+                <input type="text" id="Amount_Indebt" placeholder="Pry 5" name="Amount_Indebt" >
+                   <br><br>
+
+                <label for="phone_number"> Phone Number:</label>
+                   
+               <input type="tel" id="phone_number" placeholder="+2348114685199" name="phone_number" required>
+                   <br><br>
+
+                <label for="email">Email:</label>
+               <input type="email" id="email" placeholder="Insert Email" name="email" required>
+                <br><br>
+                                                          
+               <button class="btnEdit" type="submit"><a href="success.html">Edit</a></button>
+               <button class="btnAdd" type="submit"><a href="success.html">Add</a></button> -->
+            </form>
+        </div>
+
+
+        
+
+    </div>
+</body>
+</html>
