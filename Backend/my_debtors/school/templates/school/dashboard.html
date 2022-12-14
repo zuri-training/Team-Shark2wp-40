@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../static/CSS/Dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+       <h1> Welcome to the school admin PROFILE</h1>
+       
+
+   
+        <span>  <h2>Welcome,  {{ request.user }}</h2></span>
+        <h3 ><a class="btns" href="{% url 'logout' %}" style="color: red;">Log out</a></h3>
+    <div class="container">
+        <div class="item Dashboard_sideBar ">
+            <ul>
+                <li><i><img src="Logo.jpg" alt=""></i></li>
+                <li><img src="Pic.jpg" alt=""></li>
+                <li><a href=""><img src="IMG/Dashboard.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/Schools.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/Debtors.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/Posts.jpg" alt=""></a></li>
+                <li><a href=""><img src="IMG/Profile.jpg" alt=""></a></li><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li><a href=""><img src="IMG/Log out.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+
+        <div class="item search_Bar">
+            
+                <!--<input type="text" id="search" placeholder="Search, debtors, students, School...." name="search" >
+                <img src="pic & Bell.jpg" alt="">-->
+                <img src="IMG/Search.jpg" alt="">
+            
+        </div>
+
+
+        <div class="item population_Bar">
+            
+                <a href=""><img src="IMG/Population.jpg" alt=""></a>
+                <a href=""><img src="IMG/Returnees.jpg" alt=""></a>
+                <a href=""><img src="IMG/Rate of Debtors.jpg" alt=""></a>
+                <a href=""><img src="IMG/Total Population.jpg" alt=""></a>
+                
+            
+        </div>
+
+
+        <div class="mostWanted_Bar">
+            
+                <a href=""><img src="Pie Chart.jpg" alt=""></a>
+                <a href=""><img src="Highest & Most.jpg" alt=""></a>
+            
+        </div>
+        
+        <h2><span><a href="{% url 'school:add-debtor' %}">Add Debtor</a> </span></h2>
+
+        <div class="Documentation_Bar">
+            <h2>Documentation </h2>
+            <table>
+                <tr class="Heading-1">
+                    <th rowspan="2">S.No</th>
+                    <th rowspan="2">Full Name</th>
+                    <th rowspan="2">Class</th>
+                    
+                    <th>School</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                    <th>Outstanding</th>
+                    <th>Date</th>
+                    
+                </tr>
+                <tr class="sub-heading">
+                    
+           
+                </tr>
+                {% for instance in object_list %}
+                <tr class="row-1">
+                    <td>{{ instance.id }} </td>
+                    <td> <a href="">{{ instance.ward_name }}</a></td>
+                    <td class="MTH">{{ instance.debtor_class }}</td>
+                    <td class="ENG">{{ instance.school }}</td>
+                    <td class="PHY">{{ instance.email }}</td>
+                    <td class="CHEM">{{ instance.phone_no }}</td>
+                    <td class="BIO">{{ instance.amount_indebted }}</td>
+                    <td class="BIO">23-05-2022</td>
+                    
+                </tr>
+                {% endfor %}
+               
+                
+            
+            </table>  
+        </div>
+
+    </div>
+</body>
+{% endblock content %}

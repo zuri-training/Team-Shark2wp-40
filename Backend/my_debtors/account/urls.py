@@ -1,6 +1,6 @@
 
 from django.urls import include, path
-# from .views import *
+from .views import *
 from . import views
 # SchoolAccount
 urlpatterns = [
@@ -9,8 +9,10 @@ urlpatterns = [
     path('register/', views.registerPage, name="register"),
     # path("profile/", userProfile, name="userProfile"), 
     # path("school_reg/", schoolRegView, name="schoolRegView"),
-    path("school_profile/", views.schoolProfile, name="schoolprofile"),
+    path("dashboard/", login_required(ListDebtor.as_view()), name="dashboard"),
+    # path("dashboard/", views.dashBoard, name="dashboard"),
     path("guardian_profile/", views.guardianProfile, name="guardianprofile"),
+    # path('dashboard/<int:id>/', login_required(DetailDebtor.as_view()), name='detail-debtor'),
    
 ]
 

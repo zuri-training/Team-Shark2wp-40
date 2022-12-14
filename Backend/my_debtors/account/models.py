@@ -18,10 +18,12 @@ class CustomUser(AbstractUser):
     last_name = models.CharField(max_length=250)
     phone_number = models.CharField(max_length=15)
     email       = models.EmailField(max_length=120, unique=True) 
-    school_name = models.CharField(max_length=250)
-    cac         = models.CharField(max_length=120)
-    student_name = models.CharField(max_length=120, default="")
-    # date_of_establishment = models.DateField(auto_now=False, auto_now_add=False )
+    is_school = models.BooleanField(default=False)
+    is_guardian = models.BooleanField(default=False)
+    school_name = models.CharField(max_length=250, blank=True)
+    cac         = models.CharField(max_length=120, blank=True)
+    student_name = models.CharField(max_length=120, default="", blank=True)
+    # date_of_establishment = models.DateField( blank=True )
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ['first_name', 'last_name']
 

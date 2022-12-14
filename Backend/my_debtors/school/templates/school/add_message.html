@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form class="DebtorDetails" action="" method="POST">
+            
+    {% csrf_token %}
+   <label for="full_name"> Name of Debtor:</label>
+   <p> {{form.debtor_name.label}} {{form.debtor_name}} </p>
+
+   <p>  {{form.ward_name.label}} {{form.ward_name}} </p>
+   <p> {{form.email.label}} {{form.email}} </p>
+   <p> {{form.school.label}} {{form.school}} </p>
+  
+   <p>  {{form.debtor_class.label }}  {{form.debtor_class }} </p>
+   <p>  {{form.amount_indebted.label }} {{form.amount_indebted }} </p>
+   <p>  {{form.phone_no.label}} {{form.phone_no}}</p>
+   <p> {{form.debtor_image.label}}  {{form.debtor_image}} </p>
+   
+        {{form.errors}}
+    <input type="submit" value="Add Deptor">
+
+
+{% endblock content %}
