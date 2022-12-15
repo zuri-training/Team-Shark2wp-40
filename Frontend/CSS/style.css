@@ -845,7 +845,7 @@ footer {
         flex-direction: column;
         gap: 24px;
         width: 115px;
-        height: 200px;    
+        height: 220px;    
     }
     .foot-nav {
         display: flex;
