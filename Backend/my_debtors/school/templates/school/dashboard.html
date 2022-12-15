@@ -1,64 +1,216 @@
 {% extends 'base.html' %}
 
 {% block content %}
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../static/CSS/Dashboard.css">
-    <title>Dashboard</title>
+    <script src='https://fontawesome.com/icons/school?s=thin&f=classic' crossorigin='anonymous'></script><title>Dashboard</title>
+    <link rel="stylesheet" href="../../../static/CSS/style_dashboard.css">
+    <title> DashBoard</title>
 </head>
 <body>
-       <h1> Welcome to the school admin PROFILE</h1>
-       
+    <div class="main_container1">
+        <!-- Container for the Dashboard SideBar-->
+   <div class="main_Container">
+    <!-- DashBoard SideBar-->
+    <main class="Dashboard_sidebar">
+        <!-- Container for the Logo-->
+        <div class="logo_">
+            <ul >
+                <li><i><img src="../../../static/IMG/Logo.png" alt="">MyDebtor</i></li>
+                
+                </ul>
+            
+        </div>
+        <!-- Container for Picture and Welcome Back -->
+        <div class="Pic_Wel">
+        <!-- <img  src="../../../static/IMG/Pic.png" alt=""> -->
+        
+        <h4>HI  {{ request.user }}</h4>
 
-   
-        <span>  <h2>Welcome,  {{ request.user }}</h2></span>
+
+          <h4>Welcome Back</h4>
+
+
         <h3 ><a class="btns" href="{% url 'logout' %}" style="color: red;">Log out</a></h3>
-    <div class="container">
-        <div class="item Dashboard_sideBar ">
+
+    
+        <!-- Container for the Navigation Bar-->
+        <div class="Dash_Nav" >
+            
+            <div class="Dash_Nav1">
             <ul>
-                <li><i><img src="Logo.jpg" alt=""></i></li>
-                <li><img src="Pic.jpg" alt=""></li>
-                <li><a href=""><img src="IMG/Dashboard.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Schools.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Debtors.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Posts.jpg" alt=""></a></li>
-                <li><a href=""><img src="IMG/Profile.jpg" alt=""></a></li><br><br><br><br><br><br><br><br><br><br><br><br>
-                <li><a href=""><img src="IMG/Log out.jpg" alt=""></a></li>
+                
+                <li class="Nav_Bar"><a href=""><i><img src="../../../static/IMG/Dashboard.jpg" alt="">DashBoard</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img style="height: 40px;" src="../../../static/IMG/Schools.jpg" alt="">School</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img src="../../../static/IMG/Debtors.jpg" alt="">Debtors</i></a></li>
+                <li class="Nav_Bar"><a href="{% url 'school:add-debtor' %}"><i><img src="../../../static/IMG/Posts.jpg" alt="">Add Debtor</i></a></li>
+                <li class="Nav_Bar"><a href=""><i><img src="../../../static/IMG/Profile.jpg" alt="">Profile</i></a></li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li class="Nav_Bar"><a href="{% url 'logout' %}"><i><img src="../../../static/IMG/Log out.jpg" alt="">Log Out</i></a></li>
             </ul>
         </div>
-
-
-        <div class="item search_Bar">
-            
-                <!--<input type="text" id="search" placeholder="Search, debtors, students, School...." name="search" >
-                <img src="pic & Bell.jpg" alt="">-->
-                <img src="IMG/Search.jpg" alt="">
-            
-        </div>
-
-
-        <div class="item population_Bar">
-            
-                <a href=""><img src="IMG/Population.jpg" alt=""></a>
-                <a href=""><img src="IMG/Returnees.jpg" alt=""></a>
-                <a href=""><img src="IMG/Rate of Debtors.jpg" alt=""></a>
-                <a href=""><img src="IMG/Total Population.jpg" alt=""></a>
-                
-            
-        </div>
-
-
-        <div class="mostWanted_Bar">
-            
-                <a href=""><img src="Pie Chart.jpg" alt=""></a>
-                <a href=""><img src="Highest & Most.jpg" alt=""></a>
-            
         </div>
         
-        <h2><span><a href="{% url 'school:add-debtor' %}">Add Debtor</a> </span></h2>
+    </main>
+    </div>
 
-        <div class="Documentation_Bar">
-            <h2>Documentation </h2>
+    <div class="SideBar_Container">
+    
+    <!-- Container for the Search Nav Bar-->
+<div class="container3">
+    <!-- Search Icon and Notification-->
+    <div class="Icon_container">
+        <section>
+            <ul >
+                <li><input type="text" id="search" placeholder="Search, debtors, students, School...." name="search" ></li>
+                <li><img src="../../../static/IMG/pic & Bell.jpg" alt=""></li>
+            </ul>
+        </section>
+    </div>
+        </div>
+            
+        <!-- Container for the Population Bar-->
+       
+        <div class="Container_for_Population_Pie_Table">
+    <!-- Population of School & Returnees & Rate of Debtors and Total Population of Students-->
+       <div class="population">
+        <div class="population_Items">
+            <section>
+                <ul>
+                    <li><button class="btn"><a href=""><p>Populations of schools</p> <br> <span>701</span> <br> <p>Details ></p> <br> <span>+10%</span></a></button></li>
+                    <li><button class="btn"><a href=""> <p> Returnees</p> <br> <span>50%</span> <br> <p>Details ></p> <span>+10%</span></a></button></li>
+                    <li><button class="btn"><a href=""><p>Rate of Debtors</p> <br> <span>31.6%</span> <br> <p> Details > </p> <br> <span>+10%</span></a></button></li>
+                    <li><button class="btn"><a href=""> <p>Total Population of students</p> <br> <span>3,000</span> <br> <p>Details ></p> <br> <span>+10%</span></a></button></li>
+                    
+                </ul>
+            </section>
+        </div>
+        
+       </div>
+
+
+
+
+
+
+
+
+       <!-- Highest And Most Wanted Defaulters-->
+    <div class="Highest_MsWanted">
+
+         <!-- Container for the pie Maincontainer-->
+        <div class="pie_mainContainer" >
+            <div class="most_wanted">
+                <div class="img_">
+                    <img src="../../../static/IMG/Pie Chart.jpg" alt="">
+                       
+                </div>
+                
+                                
+        
+
+         <!-- Container for the pie Navigation Bar-->
+        <div class="pie_Nav" >
+            
+            <div class="pie_Nav1">
+            <ul>
+                
+                <li class="pie_Bar"><a href=""><i><img src="../../../static/IMG/Rectangle 21.png" alt=""> <span>Migrating Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="../../../static/IMG/Rectangle 22.png" alt=""> <span>Paying Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="../../../static/IMG/Rectangle 23.png" alt=""> <span>Signed out Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="../../../static/IMG/Rectangle 24.png" alt=""> <span>Missing Debtors</span> </i></a></li>
+                <li class="pie_Bar"><a href=""><i><img src="../../../static/IMG/Rectangle 25.png" alt=""> <span>Recovered Debtors</span> </i></a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+                <div class="table_mainContainer">
+            <div class="..table_container">
+                
+                <ul><li><a href=""> <table>
+           
+
+                    <tr class="Heading-1">
+                        <th rowspan="2" colspan="8" class="mostT">Highest And Most Wanted Defaulters</th>
+                                        
+                    </tr>
+        
+                    <tr class="sub-heading">
+                        
+                        
+                    </tr>
+                    <tr class="row-1">
+                        <td colspan="8">
+                            <div class="mostWantedd">
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                                <div>
+                                    <span>Joy Glory</span><br><p>Migrated from three Different<br> Schools and owes a total of 650$</p>
+                                </div>
+                                <div>
+                                    <h6>Add a comment ></h6>
+                                </div>
+                                
+        
+                            </div>
+                        </td>
+                        
+                        
+                    </tr>
+                    <tr Class="row-2">
+                        <td colspan="8"><div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div class="mostWantedd">
+                                <span>Favour James</span><br><p>Migrated from Five Different Schools and owes a total of 800K</p>
+                            </div>
+                            <div>
+                                <h6>Add a comment ></h6>
+                            </div>
+                            
+        
+                        </div></td>
+                        
+                    </tr>
+                    <tr class= "row-3">
+                        <td colspan="8">><div>
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div class="mostWantedd">
+                                <span>Jane Isaac</span><br><p>Performed Fake Payment Transaction  and owes a total of 750K</p>
+                            </div>
+                            <div>
+                                <h6>Add a comment ></h6>
+                            </div>
+                            
+        
+                        </div></td>
+                        
+                        
+                    </tr>
+                    <tr class="row-4">
+                        <td colspan="8"><button><h6>See More ></h6></button></td>
+                        
+                        
+                    </tr>
+                   
+                    
+                
+                </table> </a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+        <!-- Documentation-->
+     
+        <div class="Table_" style="overflow-x:auto;">
+            <div id="Score-Info">
+                <h2>Documentation </h2>
+            </div>
+            
             <table>
                 <tr class="Heading-1">
                     <th rowspan="2">S.No</th>
@@ -74,7 +226,7 @@
                 </tr>
                 <tr class="sub-heading">
                     
-           
+                    
                 </tr>
                 {% for instance in object_list %}
                 <tr class="row-1">
@@ -89,12 +241,20 @@
                     
                 </tr>
                 {% endfor %}
-               
+                
                 
             
-            </table>  
-        </div>
+            </table>
+        </div> 
 
-    </div>
+
+
+            </div>
+               
+   
+    
+
 </body>
+</html>
+
 {% endblock content %}

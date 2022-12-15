@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "Dashboard_sideBar search_Bar Search_Bar Search_Bar Search_Bar"
+    "Dashboard_sideBar profile_pic profile_pic profile_pic profile_pic"
+    "Dashboard_sideBar profile-pic profile-pic profile-pic profile-pic"
+    "Dashboard_sideBar user_info user_info user_info user_info"
+    "Dashboard_sideBar user_info user_info user_info user_info"
+    "Dashboard_sideBar user_info user_info user_info user_info";
+    gap: 2px;
+    
+    
+        
+}
+.item{
+    
+    text-align: center;
+    border-radius: 5px;
+    justify-content: center;
+    
+    
+}
+.Dashboard_sideBar{
+    grid-area: Dashboard_sideBar;
+    text-align: center;
+    border: 2px blue;
+    background-color: #e6f2ed;
+    
+   
+    
+    
+    
+}
+.search_Bar {
+    grid-area: search_Bar;
+    border-radius: 2px;
+    
+     
+    
+   
+}
+.profile_pic{
+    grid-area: profile_pic;
+    /* border: 2px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 426px;
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 612px;
+   
+          
+}
+
+.user_info{
+    grid-area: user_info;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    width: 426px;
+    margin-top: 0px;
+    margin-left: 150px;
+    height: 612px;
+
+   
+          
+}

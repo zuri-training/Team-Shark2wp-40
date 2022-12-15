@@ -2,7 +2,137 @@
 
 {% block content %}
 
-<h1 style="display: block; text-align: center;">Welcome</h1>
-<img src="../static/IMG/unisex.png" alt="Two people looking at a PC">
+<head>
+    <link rel="stylesheet" href="../static/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Debtors</title>
+  </head>
+  <body>
+    <section>
+      <div class="land">
+        <img src="../static/IMG/Hero Section.png" alt="Book and coffee on a table" />
+        <div class="land-intro">
+          <div class="land-content">
+            <h2>Stay Updated and Track History of student's <span>Debt Data</span> in your Locality</h2>
+            <p>Know the history of your ward, before granting admissions, Validate student history and ascertain insured payment. Manage your schools, minimize your loss and maximize profit.</p>
+          </div>
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <div class="about">
+        <h2>About Us</h2>
+        <div class="about-info">
+          <img src="../static/IMG/unisex1.png" alt="Two people looking at a PC">
+          <div class="about-txt">
+            <p>My debtor is a web-based application that allows schools to track the payment history of students.</p>
+            <p>This website allows school administrators and owners to keep track of the names of school fee debtors. This is done to prevent students with unpaid tuition from transferring to other institutions.</p>
+            <button>Know More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="features">
+        <h2>Features</h2>
+        <div class="feat">
+          <div class="feat-info">
+            <img src="../static/IMG/code.png" alt="PC with code">
+            <div class="feat-txt">
+              <h3>Vast Record</h3>
+              <p>Access a database of students with outstanding school debt.</p>
+            </div>
+          </div>
+          <div class="feat-info">
+            <img src="../static/IMG/key.png" alt="Brown key">
+            <div class="feat-txt">
+              <h3>Safety & Security</h3>
+              <p>The safety of your business thriving is assured because you have access to data of debtors from other schools around you.</p>
+            </div>
+          </div>
+          <div class="feat-info">
+            <img src="../static/IMG/brick.png" alt="brick game">
+            <div class="feat-txt">
+              <h3>Contend for the Truth</h3>
+              <p>If you are accused of owing, you have the right to present appropriate evidence to defend yourself.</p>
+            </div>
+          </div>
+          <div class="feat-info">
+            <img src="../static/IMG/image 10.png" alt="Man with a phone">
+            <div class="feat-txt">
+              <h3>Payment History Tracking</h3>
+              <p>Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="call">
+        <div class="call-info">
+          <h3>Get Started Today!</h3>
+          <p>Take the bold step to research about the payment history of your a potential student from his/her previous school before serving admission in your institution.</p>
+        </div>
+        <button>Sign Up</button>
+      </div>
+
+      <div class="client">
+        <h2>Our Clients</h2>
+        <div class="client-info">
+          <img src="../static/IMG/catholic.png" alt="catholic logo">
+          <img src="../static/IMG/ogun.png" alt="ogun logo">
+          <img src="../static/IMG/brookstone.png" alt="brookstone logo">
+          <img src="../static/IMG/regina.png" alt="R.P.C logo">
+          <img src="../static/IMG/nigerian.png" alt="school logo">
+          <img src="../static/IMG/navy.png" alt="navy logo">
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <h2>Testimonials</h2>
+        <div class="test-con">
+          <div class="test-info">
+            <img src="../static/IMG/lowcut.png" alt="Lady with a lowcut">
+            <h3>Kristin Watson</h3>
+            <p>My debtor has helped me to clear my name and retain my prestige when I was wrongfully accused of owing a certain amount of money and was denied admission into another school.</p>
+          </div>
+          <div class="test-info">
+            <img src="../static/IMG/china.png" alt="Chinese lady">
+            <h3>Dianne Russell</h3>
+            <p>With a well thought out platform like my debtor, I can track the debt profile of a student from another school before granting that student an admission.</p>
+          </div>
+          <div class="test-info">
+            <img src="../static/IMG/dread.png" alt="Lady with a lowcut">
+            <h3>Theresa Webb</h3>
+            <p>My debtor has reduced the rate parents who owe excessive amounts of school fees change their children around their locality to evade paying the fees they owe.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-con">
+          <img src="../static/IMG/contact.png" alt="Contact bricks">
+          <div class="contact-form">
+            <h3>Send a Message</h3>
+            <label for="name">Name <input type="text" placeholder="Name" name="name" required></label>
+            <label for="email">Email <input type="email" placeholder="Email" name="email" required></label>
+            <label for="message">Message <textarea type="text" placeholder="Message"></textarea></label>
+            <button>Send</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
 {% endblock content %}
